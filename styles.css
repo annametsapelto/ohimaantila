@@ -1,0 +1,211 @@
+
+.lora-mylora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+font-weight: 500;
+  font-style: normal;
+}
+.inter-myinter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* =========================
+   OHIMAAN TILA - STYLES
+   ========================= */
+
+/* ---------
+   VÄRIT
+   ----------
+   Metsänvihreä: #4F6B45
+   Mansikanpunainen: #C94B4B
+   Pellavanvaalea: #F7F2E8
+   Tumma ruskea: #5A4635
+   Vaalea salvianvihreä: #DDE6D5
+*/
+
+
+/* =========================
+   PERUSASETUKSET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #F7F2E8;
+    color: #5A4635;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+
+/* =========================
+   TYPOGRAFIA
+   ========================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Lora", serif;
+    color: #4F6B45;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #C94B4B;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================
+   RAKENNE
+   ========================= */
+
+main {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1.25rem;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background:
+        linear-gradient(
+            rgba(79, 107, 69, 0.65),
+            rgba(79, 107, 69, 0.65)
+        ),
+        url("images/pelto.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 30vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 4rem 1.5rem;
+}
+
+header h1 {
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+/*
+   Kun lisäät logon myöhemmin:
+   
+   <img src="images/logo.png" alt="Ohimaan tila logo" class="logo">
+
+*/
+
+.logo {
+    width: 140px;
+    max-width: 40vw;
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================
+   LISTAT
+   ========================= */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #C94B4B;
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #4F6B45;
+    color: #F7F2E8;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+
+/* =========================
+   RESPONSIIVISUUS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 92%;
+        padding: 2rem 0;
+    }
+
+    section {
+        padding: 1.75rem;
+    }
+
+    header {
+        min-height: 35vh;
+    }
+
+}
